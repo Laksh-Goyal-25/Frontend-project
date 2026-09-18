@@ -1,0 +1,157 @@
+Frontend – Theory Assignment 2
+Name: Lakshya Goyal
+Q1. What is CSS Box Model?
+The CSS Box Model describes how every HTML element is represented as a rectangular box. It consists of four parts: content, padding, border, and margin.
+
+• Content: The actual text, image, or other content of the element.
+• Padding: Space between the content and the border.
+• Border: The line surrounding the content and padding.
+• Margin: Space outside the border, separating the element from other elements.
+
+Example:
+.box {
+  width: 200px;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+By default, the given width applies to the content area, while padding and border are added to the total size.
+Q2. What is media query? Explain with a sample code.
+A media query is a CSS feature used to apply different styles depending on the screen size or other device conditions. It is mainly used to create responsive websites.
+
+Example:
+body {
+  background: white;
+}
+
+@media (max-width: 600px) {
+  body {
+    background: lightblue;
+  }
+}
+
+In this example, the background changes to light blue when the screen width is 600px or less. This helps a website adjust its design for mobile, tablet, and desktop screens.
+Q3. What are the features of Bootstrap?
+Bootstrap is a popular frontend framework used to create responsive and mobile-friendly websites.
+
+Main features of Bootstrap are:
+1. Responsive grid system.
+2. Ready-made components such as buttons, cards, forms and navbars.
+3. Utility classes for spacing, colors, alignment and display.
+4. Mobile-first design.
+5. Responsive breakpoints for different screen sizes.
+6. JavaScript components such as modals, dropdowns and carousels.
+7. Easy customization using CSS and Sass.
+8. Reduces development time by providing commonly used styles and components.
+Q4. Write an example of basic grid structure in Bootstrap?
+Bootstrap uses a 12-column grid system. The basic structure normally contains a container, a row, and columns.
+
+Example:
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">Column 1</div>
+    <div class="col-md-4">Column 2</div>
+    <div class="col-md-4">Column 3</div>
+  </div>
+</div>
+
+Here, each col-md-4 takes 4 out of the 12 available columns, so the three columns together occupy the complete row.
+Q5. What is CSS Selectors?
+CSS selectors are used to select HTML elements on which CSS styles are applied.
+
+Common types of selectors are:
+1. Element selector: p { color: blue; }
+2. Class selector: .box { padding: 10px; }
+3. ID selector: #header { background: black; }
+4. Universal selector: * { margin: 0; }
+5. Group selector: h1, h2, p { font-family: Arial; }
+6. Attribute selector: input[type="text"] { border: 1px solid gray; }
+
+Selectors make it possible to target specific elements or groups of elements on a webpage.
+Q6. What are CSS backgrounds, list the properties?
+CSS background properties are used to control the background of an HTML element.
+
+Important background properties are:
+• background-color – sets the background color.
+• background-image – adds a background image.
+• background-repeat – controls whether the image repeats.
+• background-position – sets the position of the image.
+• background-size – controls the size of the background image.
+• background-attachment – controls whether the background scrolls with the page.
+• background-origin – specifies the area used for positioning the background.
+• background-clip – controls how far the background extends.
+• background – shorthand property for setting several background values.
+
+Example:
+.box {
+  background-color: lightgray;
+  background-image: url("image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+Q7. How can we overlap elements in CSS?
+Elements can be overlapped in CSS by using positioning properties and the z-index property.
+
+Example:
+.box1 {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  z-index: 1;
+}
+
+.box2 {
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  z-index: 2;
+}
+
+Since box2 has a higher z-index value, it appears above box1. Overlapping can also be achieved using negative margins, transforms, or CSS Grid.
+Q8. What are the different positioning properties in CSS?
+The main values of the CSS position property are:
+
+1. static – The default position. The element follows the normal document flow.
+2. relative – The element remains in the normal flow but can be moved using top, right, bottom, or left.
+3. absolute – The element is removed from the normal flow and is positioned relative to its nearest positioned ancestor.
+4. fixed – The element is positioned relative to the browser window and remains in the same place while scrolling.
+5. sticky – The element behaves like a relatively positioned element until a given scroll position is reached, after which it sticks in place.
+
+Example:
+.box {
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+Q9. What is ECMAScript?
+ECMAScript is a standard specification that defines the rules and features of the JavaScript language. JavaScript is the most widely used implementation of ECMAScript.
+
+ECMAScript is maintained as a language standard and is updated through different editions. Features such as let, const, arrow functions, classes, promises, and modules are included in modern ECMAScript versions.
+
+In simple words, ECMAScript is the standard, while JavaScript is an implementation of that standard used in browsers and other environments.
+Q10. What is the difference between var, let and const in JavaScript. Explain Temporal Dead zone?
+var, let, and const are used to declare variables in JavaScript, but they have different rules.
+
+• var is function-scoped. It can be redeclared and reassigned.
+• let is block-scoped. It can be reassigned but cannot be redeclared in the same block.
+• const is block-scoped. It cannot be reassigned after initialization and must be initialized when declared.
+
+Example:
+var a = 10;
+var a = 20;       // allowed
+
+let b = 10;
+b = 20;           // allowed
+
+const c = 10;
+// c = 20;        // error
+
+Temporal Dead Zone (TDZ):
+The Temporal Dead Zone is the period from entering a block until the declaration of a let or const variable is reached. During this period, the variable cannot be accessed.
+
+Example:
+console.log(x);   // ReferenceError
+let x = 10;
+
+The error occurs because x is in the Temporal Dead Zone before its declaration is reached.
