@@ -1,0 +1,95 @@
+Theory Assignment – 3
+
+Name: Lakshya Goyal
+
+Q1. What is the difference between frontend and backend JavaScript?
+
+Frontend JavaScript runs in the user's browser and makes webpages interactive. It handles tasks such as button clicks, form validation, and changing webpage content.
+
+Backend JavaScript runs on a server, commonly using Node.js. It handles tasks such as processing requests, working with databases, and managing user authentication.
+
+Q2. What is DOM?
+
+DOM stands for Document Object Model. It represents an HTML document as a tree of objects. JavaScript uses the DOM to access, modify, add, or remove HTML elements and change their styles.
+
+Q3. What is an event in JavaScript?
+
+An event is an action that JavaScript can detect and respond to. Examples include clicking a button, typing on a keyboard, submitting a form, or loading a webpage.
+
+Q4. What is the event loop in JavaScript?
+
+The event loop helps JavaScript handle asynchronous tasks. It checks whether the call stack is free and schedules pending callbacks to run. It allows JavaScript to handle tasks such as timers and network requests without blocking the main thread while waiting.
+
+Q5. What is hoisting in JavaScript?
+
+Hoisting is JavaScript's behaviour of processing variable and function declarations before executing the code. Function declarations can be called before they appear in the code. Variables declared with var are initialized as undefined, while let and const cannot be accessed before their declarations are reached.
+
+Q6. What is event bubbling?
+
+Event bubbling is the process in which an event starts at the target element and then moves upward through its parent elements. For example, clicking a button inside a div can trigger the click event on both the button and the parent div.
+
+Q7. What is the difference between named function, anonymous function and arrow function?
+
+1\. Named Function: A function that has a name and can be called using that name.
+
+Example:
+
+function greet()&#x20;
+
+2\. Anonymous Function: A function without a name, often assigned to a variable or passed as an argument.
+
+Example:
+
+const sayHi = function() ;
+
+3\. Arrow Function: A shorter way to write a function using the => symbol. It uses the this value of its surrounding scope.
+
+Example:
+
+&#x20;   const welcome = () => "Welcome";
+
+Q8. Explain for-of and for-in loop.
+
+The for-of loop is used to access the values of an iterable, such as an array or string.
+
+Example:
+
+&#x20;   const fruits = ["Apple", "Mango", "Banana"];
+
+for (const fruit of fruits)&#x20;
+
+The for-in loop is used to access the enumerable property keys of an object.
+
+Example:
+
+&#x20;   const student =&#x20;
+
+Q9. Explain any five array methods.
+
+Array methods are built-in JavaScript functions used to add, remove, or modify array elements.
+
+1. push(): Adds one or more elements to the end of an array.
+2. pop(): Removes the last element from an array.
+3. shift(): Removes the first element from an array.
+4. unshift(): Adds one or more elements to the beginning of an array.
+5. map(): Creates a new array by applying a function to each element.
+
+Example:
+
+&#x20;   let numbers = [1, 2, 3];
+
+numbers.push(4);     numbers.pop();
+
+&#x20;   let result = numbers.map(n => n \* 2);
+
+Q10. What is a callback method?
+
+A callback is a function passed as an argument to another function so that it can be called later. Callbacks are commonly used in event handling and asynchronous operations.
+
+Example:
+
+function processNumber(number, callback)&#x20;
+
+processNumber(5, function(value) );
+
+In this example, the anonymous function is passed as a callback and executes when the processNumber() function calls it.
