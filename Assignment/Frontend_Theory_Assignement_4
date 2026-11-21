@@ -1,8 +1,6 @@
 Frontend Theory Assignment - 4
-Name: ____________________
-Class: ____________________
-Submission Date: ____________________
-
+Name: Lakshya goyal
+Class: NC
 Q1. What is a closure in JavaScript? Explain with a suitable example.
 
 A closure is a feature in JavaScript in which an inner function remembers and can access variables from its outer function, even after the outer function has finished executing.
